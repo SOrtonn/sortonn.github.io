@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <h1>Vue is working if you can see this!</h1>
     <header>
-      <h1>Sam Orton</h1>
+      <h2>Sam Orton</h2>
       <nav>
         <router-link to="/">Home</router-link> |
         <router-link to="/projects">Projects</router-link>
@@ -10,6 +11,12 @@
     <router-view></router-view>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
 
 <style>
 #app {
