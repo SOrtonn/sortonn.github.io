@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <h2>Welcome to My Portfolio</h2>
-      <p>Here you can find information about my projects and skills.</p>
+      <p>Here you can find information about my projects</p>
       <router-link to="/projects" class="cta-button">View My Projects</router-link>
     </div>
   </template>
