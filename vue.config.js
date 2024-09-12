@@ -1,5 +1,5 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/sortonn.github.io/'
+    ? '/' // For user/organization sites, no subdirectory needed
     : '/'
 }
