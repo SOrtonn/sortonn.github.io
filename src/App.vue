@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>My Portfolio</h1>
+      <h1>Sam Orton</h1>
       <nav>
         <router-link to="/">Home</router-link> |
         <router-link to="/projects">Projects</router-link>
