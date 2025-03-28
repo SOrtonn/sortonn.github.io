@@ -11,7 +11,7 @@ const timelineData = [
     },
     {
         date: '2023-12-01',
-        content: 'reedhi fart monsta',
+        content: 'reedhi fart all of the time',
     },
     // Add more timeline entries here
 ];
