@@ -2,7 +2,7 @@ const timeline = document.querySelector('.timeline');
 
 const timelineData = [
     {
-        date: '2001-12-01',
+        date: '2001-12-02',
         content: 'A young boy was born',
     },
     {
