@@ -3,15 +3,15 @@ const timeline = document.querySelector('.timeline');
 const timelineData = [
     {
         date: '2001-12-02',
-        content: 'A young boy was born',
+        content: 'A young orty was born',
     },
     {
         date: '2023-11-15',
-        content: 'Built my first simple web app.',
+        content: 'reedhi smells',
     },
     {
         date: '2023-12-01',
-        content: 'Contributed to an open-source project.',
+        content: 'reedhi fart monsta',
     },
     // Add more timeline entries here
 ];
