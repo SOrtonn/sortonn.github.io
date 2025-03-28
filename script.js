@@ -2,8 +2,8 @@ const timeline = document.querySelector('.timeline');
 
 const timelineData = [
     {
-        date: '2023-10-26',
-        content: 'Started learning JavaScript.',
+        date: '2 December 2001',
+        content: 'A young boy was born',
     },
     {
         date: '2023-11-15',
