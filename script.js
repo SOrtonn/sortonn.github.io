@@ -1,10 +1,9 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const timelineData = [
         {
             year: 2001,
             events: [
-                { date: 'December', content: 'A young orty was born' },
+                { date: 'December', content: 'A young orty was born', image: 'assets/images.jpeg' },
                 { date: 'December', content: 'two events in one year' }
             ]
         },
@@ -63,6 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             timelineContent.appendChild(date);
             timelineContent.appendChild(content);
+
+            if (event.image) {
+                const img = document.createElement('img');
+                img.src = event.image;
+                img.classList.add('event-image');
+                timelineContent.appendChild(img);
+            }
+
             timelineItem.appendChild(timelineContent);
             yearDiv.appendChild(timelineItem);
         });
