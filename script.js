@@ -1,37 +1,73 @@
-const timeline = document.querySelector('.timeline');
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineData = [
+        {
+            year: 2001,
+            events: [
+                { date: 'December', content: 'A young orty was born' },
+                { date: 'December', content: 'two events in one year' }
+            ]
+        },
+        {
+            year: 2002,
+            events: [{ date: '2002', content: 'reedhi smells' }]
+        },
+        {
+            year: 2003,
+            events: [{ date: '2003', content: 'Some event in 2003' }]
+        },
+        {
+            year: 2004,
+            events: [{ date: '2004', content: 'Some event in 2004' }]
+        },
+        {
+            year: 2005,
+            events: [{ date: '2005', content: 'Some event in 2005' }]
+        },
+        {
+            year: 2006,
+            events: [{ date: '2006', content: 'Some event in 2006' }]
+        },
+        {
+            year: 2007,
+            events: [{ date: '2007', content: 'Some event in 2007' }]
+        }
+    ];
 
-const timelineData = [
-    {
-        date: '2nd December 2001',
-        content: 'A young orty was born',
-    },
-    {
-        date: '2023-11-15',
-        content: 'reedhi smells',
-    },
-    {
-        date: '2023-12-01',
-        content: 'reedhi fart all of the time',
-    },
-    // Add more timeline entries here
-];
+    const timeline = document.querySelector('.timeline');
+    let isLeft = true;
 
-timelineData.forEach(item => {
-    const timelineItem = document.createElement('div');
-    timelineItem.classList.add('timeline-item');
+    timelineData.forEach(yearData => {
+        const yearDiv = document.createElement('div');
+        yearDiv.classList.add('timeline-year');
 
-    const timelineContent = document.createElement('div');
-    timelineContent.classList.add('timeline-content');
+        const yearLabel = document.createElement('div');
+        yearLabel.classList.add('year');
+        yearLabel.textContent = yearData.year;
+        yearDiv.appendChild(yearLabel);
 
-    const date = document.createElement('div');
-    date.classList.add('date');
-    date.textContent = item.date;
+        yearData.events.forEach(event => {
+            const timelineItem = document.createElement('div');
+            timelineItem.classList.add('timeline-item');
+            timelineItem.classList.add(isLeft ? 'left' : 'right');
 
-    const content = document.createElement('p');
-    content.textContent = item.content;
+            const timelineContent = document.createElement('div');
+            timelineContent.classList.add('timeline-content');
 
-    timelineContent.appendChild(date);
-    timelineContent.appendChild(content);
-    timelineItem.appendChild(timelineContent);
-    timeline.appendChild(timelineItem);
+            const date = document.createElement('div');
+            date.classList.add('date');
+            date.textContent = event.date;
+
+            const content = document.createElement('p');
+            content.textContent = event.content;
+
+            timelineContent.appendChild(date);
+            timelineContent.appendChild(content);
+            timelineItem.appendChild(timelineContent);
+            yearDiv.appendChild(timelineItem);
+        });
+
+        isLeft = !isLeft;
+        timeline.appendChild(yearDiv);
+    });
 });
