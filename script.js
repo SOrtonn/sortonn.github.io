@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             year: 2007,
             events: [{ date: '2007', content: 'Some event in 2007' }]
+        },
+        {   
+            year: 2025,
+            events: [{ date: 'March', content: 'Just started this website!'}]
         }
     ];
 

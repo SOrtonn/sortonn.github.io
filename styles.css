@@ -3,7 +3,8 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 .timeline {
@@ -16,7 +17,7 @@ body {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #ccc;
+    background-color: #444;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -33,7 +34,7 @@ body {
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff9f55;
+    background-color: #ff6f00;
     color: white;
     padding: 5px 10px;
     border-radius: 25px;
@@ -64,8 +65,8 @@ body {
     width: 25px;
     height: 25px;
     right: -12.5px;
-    background-color: white;
-    border: 4px solid #ff9f55;
+    background-color: #121212;
+    border: 4px solid #ff6f00;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -77,23 +78,23 @@ body {
     width: 25px;
     height: 25px;
     left: -12.5px;
-    background-color: white;
-    border: 4px solid #ff9f55;
+    background-color: #121212;
+    border: 4px solid #ff6f00;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
 }
 
 .timeline-content {
-    background-color: white;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
     position: relative;
 }
 
 .date {
-    background-color: #ff9f55;
+    background-color: #ff6f00;
     color: white;
     padding: 5px 10px;
     border-radius: 25px;
