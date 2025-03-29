@@ -9,27 +9,27 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             year: 2002,
-            events: [{ date: '2002', content: 'reedhi smells' }]
+            events: []
         },
         {
             year: 2003,
-            events: [{ date: '2003', content: 'Some event in 2003' }]
+            events: []
         },
         {
             year: 2004,
-            events: [{ date: '2004', content: 'Some event in 2004' }]
+            events: []
         },
         {
             year: 2005,
-            events: [{ date: '2005', content: 'Some event in 2005' }]
+            events: []
         },
         {
             year: 2006,
-            events: [{ date: '2006', content: 'Some event in 2006' }]
+            events: []
         },
         {
             year: 2007,
-            events: [{ date: '2007', content: 'Some event in 2007' }]
+            events: []
         },
         {   
             year: 2025,
